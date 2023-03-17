@@ -12,8 +12,9 @@ sudo apt install zookeeperd -y
 printf "\n##### Install kafka...\n"
 sudo apt install wget -y
 sudo apt install curl -y
-mkdir ~/kafka && cd ~/kafka
-wget https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
+mkdir ~/kafka
+curl https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz -o ~/kafka/kafka_2.13-3.4.0.tgz
+cd ~/kafka
 tar -xvzf kafka_2.13-3.4.0.tgz --strip 1
 
 #Download setting
@@ -33,10 +34,13 @@ sudo systemctl enable kafka
 printf "\n##### Setting command...\n"
 
 if [ -f ~/.bashrc ]; then
+	printf "\n##### Using bashrc\n"
 	RC_FILE=~/.bashrc
 elif [ -f ~/.zshrc ]; then
+	printf "\n##### Using zshrc\n"
 	RC_FILE=~/.zshrc
 else
+	printf "\n##### Fail to detect\n"
 	RC_FILE=~/.bashrc
 fi
 
