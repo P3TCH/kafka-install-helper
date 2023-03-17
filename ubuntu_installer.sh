@@ -20,8 +20,8 @@ tar -xvzf kafka_2.13-3.4.0.tgz --strip 1
 curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/server.properties -o ~/kafka/config/server.properties
 
 #Create services
-sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/zookeeper.service -o /etc/ststemd/system/zookeeper.service
-sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/kafka.service -o /etc/ststemd/system/kafka.service
+sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/zookeeper.service -o /etc/systemd/system/zookeeper.service
+sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/kafka.service -o /etc/systemd/system/kafka.service
 
 printf "\n##### Starting service...\n"
 sudo systemctl daemon-reload
