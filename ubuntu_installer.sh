@@ -32,13 +32,11 @@ sudo systemctl enable kafka
 
 printf "\n##### Setting command...\n"
 
-if echo $0 | grep zsh | wc -l ; then
-	# assume Zsh
-	printf "\n#### Zsh detected\n"
+if [ -f ~/.bashrc ]; then
+	RC_FILE=~/.bashrc
+elif [ -f ~/.zshrc ]; then
 	RC_FILE=~/.zshrc
 else
-	# assume Bash
-	printf "\n#### Bash detected\n"
 	RC_FILE=~/.bashrc
 fi
 
