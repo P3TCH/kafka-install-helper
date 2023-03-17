@@ -10,11 +10,8 @@ printf "\n##### Installing zookeeperd...\n"
 sudo apt install zookeeperd -y
 
 printf "\n##### Install kafka...\n"
-sudo apt install wget -y
-sudo apt install curl -y
-mkdir ~/kafka
-curl https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz -o ~/kafka/kafka_2.13-3.4.0.tgz
-cd ~/kafka
+mkdir ~/kafka && cd ~/kafka
+wget https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
 tar -xvzf kafka_2.13-3.4.0.tgz --strip 1
 
 #Download setting
