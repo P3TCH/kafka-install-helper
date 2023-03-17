@@ -10,7 +10,8 @@ else
 	printf "\n##### Homebrew has installed. Updating...\n"
     brew update
 fi
-
+printf "\n##### Installing openJDK\n"
+brew install openjdk
 printf "\n##### Installing kafka...\n"
 brew install kafka
 printf "\n##### Starting kafka service...\n"
