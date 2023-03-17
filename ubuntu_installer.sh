@@ -45,10 +45,12 @@ sudo echo "alias kafka-log-dirs='~/kafka/bin/kafka-log-dirs.sh'" >> ~/.bashrc
 sudo echo "alias zookeeper-server-start='~/kafka/bin/zookeeper-server-start.sh'" >> ~/.bashrc
 sudo echo "alias zookeeper-server-stop='~/kafka/bin/zookeeper-server-stop.sh'" >> ~/.bashrc
 
-printf "\n##### Done!\n"
+source ~/.bashrc
 
-source ~./bashrc
-
+printf "\n\n\n##### Done!, have fun :D #####\n"
+printf "##### Script By.P3TCH #####\n\n"
+printf "== Commands ==\n"
+printf "kafka-topics\nkafka-console-producer\nkafka-console-consumer\n\n\n"
 #printf "\n##### Creating topic...\n"
 #bin/kafka-topics.sh --create --topic test --bootstrap-server localhost:9092
 

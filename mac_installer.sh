@@ -14,11 +14,17 @@ printf "\n##### Installing openJDK\n"
 brew install openjdk
 printf "\n##### Installing kafka...\n"
 brew install kafka
+printf "\n##### Configuring kafka...\n"
+curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/mac-config/server.properties -o /opt/homebrew/Cellar/kafka/3.4.0/libexec/config/server.properties
 printf "\n##### Starting kafka service...\n"
 brew services start kafka
 printf "\n##### Starting zookeeper service...\n"
 brew services start zookeeper
-printf "\n##### DONE.. Installer by.P3TCH\n"
 
 printf "\n\n##### kafka config location is : /opt/homebrew/Cellar/kafka/3.4.0/libexec/config\n"
 printf "##### zookeeper config location is : /opt/homebrew/Cellar/zookeeper/3.8.1/libexec/zookeeper-contrib/zookeeper-contrib-zkpython/src/test"
+
+printf "\n\n\n##### Done!, have fun :D #####\n"
+printf "##### Script By.P3TCH #####\n\n"
+printf "== Commands ==\n"
+printf "kafka-topics\nkafka-console-producer\nkafka-console-consumer\n\n\n"
