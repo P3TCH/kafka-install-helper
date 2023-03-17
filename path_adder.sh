@@ -1,8 +1,10 @@
 if [ -n "$ZSH_VERSION" ]; then
 	# assume Zsh
+	printf "\n#### Zsh detected\n"
 	RC_FILE=~/.zshrc
 elif [ -n "$BASH_VERSION" ]; then
 	# assume Bash
+	printf "\n#### Bash detected\n"
 	RC_FILE=~/.bashrc
 fi
 
