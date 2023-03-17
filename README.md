@@ -1,5 +1,5 @@
 # Kafka and Zookeeper install helper
-This project for help installing kafka and Zookeeper for my classmates :D
+This project for helping install kafka and Zookeeper for my classmates :D
 
 # How to install
 ### <code><img height="20" src="https://cdn-icons-png.flaticon.com/512/2/2235.png"></code> MacOS
