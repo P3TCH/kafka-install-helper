@@ -16,10 +16,10 @@ mkdir ~/kafka && cd ~/kafka
 wget https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
 tar -xvzf kafka_2.13-3.4.0.tgz --strip 1
 
-cd ~/kafka/config
-curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/server.properties -o server.properties
+#Download setting
+curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/server.properties -o ~/kafka/config/server.properties
 
-sudo cd /etc/systemd/system/
+#Create services
 sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/zookeeper.service -o /etc/ststemd/system/zookeeper.service
 sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/kafka.service -o /etc/ststemd/system/kafka.service
 
