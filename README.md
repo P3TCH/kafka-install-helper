@@ -21,3 +21,11 @@ kafka-topics
 kafka-console-producer
 kafka-console-consumer
 ```
+### Example command
+```shell
+#sports_news is example name
+kafka-topics --list --topic sports_news --bootstrap-server localhost:9092
+kafka-topics --describe --topic sports_news --bootstrap-server localhost:9092
+kafka-console-producer --topic sports_news --bootstrap-server localhost:9092
+kafka-console-consumer --topic sports_news --bootstrap-server localhost:9092
+```
