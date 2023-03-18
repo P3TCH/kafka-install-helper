@@ -102,7 +102,7 @@ RUN ANY COMMAND WITH .bat
 ```
   
 ##
-# Command to use kafka
+### Command to use kafka <code><span>(Windows not include)</span></code>
 *Can use this command to run (Added path :D)
 ```shell
 kafka-topics
