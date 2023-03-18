@@ -13,7 +13,16 @@ Open terminal and run this command.
 ```shell
 sudo apt update && sudo apt install -y curl wget && curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu_installer.sh -o ~/ubuntu_kafka_installer.sh && bash ~/ubuntu_kafka_installer.sh
 ```
-
+##
+### Windows
+Open Powershell and run this command.
+```shell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
+scoop update
+scoop install kafka
+```
+##
 # Command to use kafka
 *Can use this command to run (Added path :D)
 ```shell

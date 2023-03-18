@@ -60,6 +60,14 @@ sudo echo "alias zookeeper-server-stop='~/kafka/bin/zookeeper-server-stop.sh'" >
 
 source $RC_FILE
 
+if [ -f ~/.bashrc ]; then
+	bash
+elif [ -f ~/.zshrc ]; then
+	zsh
+else
+	bash
+fi
+
 printf "\n\n\n##### Done!, have fun :D #####\n"
 printf "##### Script By.P3TCH #####\n\n"
 printf "== Commands ==\n"
