@@ -12,11 +12,11 @@ sudo apt install zookeeperd -y
 printf "\n##### Install kafka...\n"
 sudo mkdir /home/kafka && cd /home/kafka
 mkdir kafka && cd kafka
-wget https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
-tar -xvzf kafka_2.13-3.4.0.tgz --strip 1
+sudo wget https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
+sudo tar -xvzf kafka_2.13-3.4.0.tgz --strip 1
 
 #Download setting
-curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/server.properties -o /home/kafka/kafka/config/server.properties
+sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/server.properties -o /home/kafka/kafka/config/server.properties
 
 #Create services
 sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/zookeeper.service -o /etc/systemd/system/zookeeper.service
