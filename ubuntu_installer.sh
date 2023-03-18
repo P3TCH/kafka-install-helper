@@ -10,12 +10,13 @@ printf "\n##### Installing zookeeperd...\n"
 sudo apt install zookeeperd -y
 
 printf "\n##### Install kafka...\n"
-mkdir ~/kafka && cd ~/kafka
+sudo mkdir /home/kafka && cd /home/kafka
+mkdir kafka && cd kafka
 wget https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
 tar -xvzf kafka_2.13-3.4.0.tgz --strip 1
 
 #Download setting
-curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/server.properties -o ~/kafka/config/server.properties
+curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/server.properties -o /home/kafka/kafka/config/server.properties
 
 #Create services
 sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubuntu-config/zookeeper.service -o /etc/systemd/system/zookeeper.service
@@ -41,22 +42,22 @@ else
 	RC_FILE=~/.bashrc
 fi
 
-sudo echo "alias kafka-topics='~/kafka/bin/kafka-topics.sh'" >> $RC_FILE
-sudo echo "alias kafka-console-producer='~/kafka/bin/kafka-console-producer.sh'" >> $RC_FILE
-sudo echo "alias kafka-console-consumer='~/kafka/bin/kafka-console-consumer.sh'" >> $RC_FILE
-sudo echo "alias kafka-server-start='~/kafka/bin/kafka-server-start.sh'" >> $RC_FILE
-sudo echo "alias kafka-server-stop='~/kafka/bin/kafka-server-stop.sh'" >> $RC_FILE
-sudo echo "alias kafka-consumer-groups='~/kafka/bin/kafka-consumer-groups.sh'" >> $RC_FILE
-sudo echo "alias kafka-configs='~/kafka/bin/kafka-configs.sh'" >> $RC_FILE
-sudo echo "alias kafka-acls='~/kafka/bin/kafka-acls.sh'" >> $RC_FILE
-sudo echo "alias kafka-reassign-partitions='~/kafka/bin/kafka-reassign-partitions.sh'" >> $RC_FILE
-sudo echo "alias kafka-preferred-replica-election='~/kafka/bin/kafka-preferred-replica-election.sh'" >> $RC_FILE
-sudo echo "alias kafka-log-dirs='~/kafka/bin/kafka-log-dirs.sh'" >> $RC_FILE
-sudo echo "alias kafka-mirror-maker='~/kafka/bin/kafka-mirror-maker.sh'" >> $RC_FILE
-sudo echo "alias kafka-replay-log-producer='~/kafka/bin/kafka-replay-log-producer.sh'" >> $RC_FILE
-sudo echo "alias kafka-replay-log-consumer='~/kafka/bin/kafka-replay-log-consumer.sh'" >> $RC_FILE
-sudo echo "alias zookeeper-server-start='~/kafka/bin/zookeeper-server-start.sh'" >> $RC_FILE
-sudo echo "alias zookeeper-server-stop='~/kafka/bin/zookeeper-server-stop.sh'" >> $RC_FILE
+sudo echo "alias kafka-topics='/home/kafka/kafka/bin/kafka-topics.sh'" >> $RC_FILE
+sudo echo "alias kafka-console-producer='/home/kafka/kafka/bin/kafka-console-producer.sh'" >> $RC_FILE
+sudo echo "alias kafka-console-consumer='/home/kafka/kafka/bin/kafka-console-consumer.sh'" >> $RC_FILE
+sudo echo "alias kafka-server-start='/home/kafka/kafka/bin/kafka-server-start.sh'" >> $RC_FILE
+sudo echo "alias kafka-server-stop='/home/kafka/kafka/bin/kafka-server-stop.sh'" >> $RC_FILE
+sudo echo "alias kafka-consumer-groups='/home/kafka/kafka/bin/kafka-consumer-groups.sh'" >> $RC_FILE
+sudo echo "alias kafka-configs='/home/kafka/kafka/bin/kafka-configs.sh'" >> $RC_FILE
+sudo echo "alias kafka-acls='/home/kafka/kafka/bin/kafka-acls.sh'" >> $RC_FILE
+sudo echo "alias kafka-reassign-partitions='/home/kafka/kafka/bin/kafka-reassign-partitions.sh'" >> $RC_FILE
+sudo echo "alias kafka-preferred-replica-election='/home/kafka/kafka/bin/kafka-preferred-replica-election.sh'" >> $RC_FILE
+sudo echo "alias kafka-log-dirs='/home/kafka/kafka/bin/kafka-log-dirs.sh'" >> $RC_FILE
+sudo echo "alias kafka-mirror-maker='/home/kafka/kafka/bin/kafka-mirror-maker.sh'" >> $RC_FILE
+sudo echo "alias kafka-replay-log-producer='/home/kafka/kafka/bin/kafka-replay-log-producer.sh'" >> $RC_FILE
+sudo echo "alias kafka-replay-log-consumer='/home/kafka/kafka/bin/kafka-replay-log-consumer.sh'" >> $RC_FILE
+sudo echo "alias zookeeper-server-start='/home/kafka/kafka/bin/zookeeper-server-start.sh'" >> $RC_FILE
+sudo echo "alias zookeeper-server-stop='/home/kafka/kafka/bin/zookeeper-server-stop.sh'" >> $RC_FILE
 
 source $RC_FILE
 
