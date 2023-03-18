@@ -11,7 +11,7 @@ sudo apt install zookeeperd -y
 
 printf "\n##### Install kafka...\n"
 sudo mkdir /home/kafka && cd /home/kafka
-mkdir kafka && cd kafka
+sudo mkdir kafka && cd kafka
 sudo wget https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
 sudo tar -xvzf kafka_2.13-3.4.0.tgz --strip 1
 
