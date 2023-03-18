@@ -1,5 +1,7 @@
 # Kafka and Zookeeper install helper
-This project for helping install kafka and Zookeeper for my classmates :D
+This project for helping install kafka and Zookeeper for my classmates :D  
+  
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=petch-kafka-installer.visitor-badge)
 
 # How to install
 ### <code><img height="20" src="https://cdn-icons-png.flaticon.com/512/2/2235.png"></code> MacOS
