@@ -112,9 +112,9 @@ kafka-console-consumer
 ### Example command
 ```shell
 #sports_news is example name
-kafka-topics --create --topic sports_news --bootstrap-server localhost:9092
-kafka-topics --list --topic sports_news --bootstrap-server localhost:9092
-kafka-topics --describe --topic sports_news --bootstrap-server localhost:9092
-kafka-console-producer --topic sports_news --bootstrap-server localhost:9092
-kafka-console-consumer --topic sports_news --bootstrap-server localhost:9092
+kafka-topics --create --topic sportsnews --bootstrap-server localhost:9092
+kafka-topics --list --topic sportsnews --bootstrap-server localhost:9092
+kafka-topics --describe --topic sportsnews --bootstrap-server localhost:9092
+kafka-console-producer --topic sportsnews --bootstrap-server localhost:9092
+kafka-console-consumer --topic sportsnews --bootstrap-server localhost:9092
 ```
