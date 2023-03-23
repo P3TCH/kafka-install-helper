@@ -25,6 +25,8 @@ sudo echo "alias kafka-replay-log-producer='/usr/local/kafka/bin/kafka-replay-lo
 sudo echo "alias kafka-replay-log-consumer='/usr/local/kafka/bin/kafka-replay-log-consumer.sh'" >> $RC_FILE
 sudo echo "alias zookeeper-server-start='/usr/local/kafka/bin/zookeeper-server-start.sh'" >> $RC_FILE
 sudo echo "alias zookeeper-server-stop='/usr/local/kafka/bin/zookeeper-server-stop.sh'" >> $RC_FILE
+sudo echo "alias startkafka='sudo /usr/local/kafka/bin/kafka-server-start.sh /usr/local/kafka/config/server.properties'" >> $RC_FILE
+sudo echo "alias stopkafka='sudo /usr/local/kafka/bin/kafka-server-stop.sh'" >> $RC_FILE
 
 source $RC_FILE
 
