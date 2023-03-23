@@ -47,12 +47,12 @@ brew services stop kafka
 ### Start
 ```shell
 sudo systemctl start zookeeper
-sudo systemctl start kafka
+startkafka
 ```
 ### Stop
 ```shell
 sudo systemctl stop zookeeper
-sudo systemctl stop kafka
+stopkafka
 ```
 ##
 
