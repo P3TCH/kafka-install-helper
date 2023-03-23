@@ -78,13 +78,13 @@ cd ~\scoop\apps\kafka\3.4.0\bin\windows
 ```
 2.Run kafka service
 ```shell
-.\kafka-server-start.bat ~\scoop\apps\kafka\ <your app version> \config\server.properties
+.\kafka-server-start.bat ~\scoop\apps\kafka\3.4.0\config\server.properties
 ```
 
 ##
 ***FOR WINDOWS YOU CAN EDIT KAFKA SETTING IN PATH***
 ```shell
-~\scoop\apps\kafka\ <your app version> \config\server.properties
+~\scoop\apps\kafka\3.4.0\config\server.properties
 ```
 ##
   
@@ -92,7 +92,7 @@ cd ~\scoop\apps\kafka\3.4.0\bin\windows
 Open new Powershell  
 1.Go to kafka location (<your app version> version Enter the version you have installed.)
 ```shell
-cd ~\scoop\apps\kafka\ <your app version> \bin\windows
+cd ~\scoop\apps\kafka\3.4.0\bin\windows
 ```
 
 RUN ANY COMMAND WITH .bat
