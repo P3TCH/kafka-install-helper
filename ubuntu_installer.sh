@@ -25,9 +25,9 @@ sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubun
 printf "\n##### Starting service...\n"
 sudo systemctl daemon-reload
 sudo systemctl start zookeeper
-sudo systemctl start kafka
+#sudo systemctl start kafka
 sudo systemctl enable zookeeper
-sudo systemctl enable kafka
+#sudo systemctl enable kafka
 
 printf "\n##### Setting command...\n"
 
