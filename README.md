@@ -61,7 +61,7 @@ stopkafka
 Open new Powershell  
 1.Go to zookeeper location (<your app version> version Enter the version you have installed.)
 ```shell
-cd ~\scoop\apps\zookeeper\ <your app version> \bin
+cd ~\scoop\apps\zookeeper\3.8.1\bin
 ```
 2.Run zookeeper service
 ```shell
@@ -74,7 +74,7 @@ cd ~\scoop\apps\zookeeper\ <your app version> \bin
 Open new Powershell  
 1.Go to kafka location (<your app version> version Enter the version you have installed.)
 ```shell
-cd ~\scoop\apps\kafka\ <your app version> \bin\windows
+cd ~\scoop\apps\kafka\3.4.0\bin\windows
 ```
 2.Run kafka service
 ```shell
