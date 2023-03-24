@@ -7,10 +7,7 @@ printf "\n##### Installing java...\n"
 sudp apt install default-jre -y
 sudo apt install default-jdk -y
 
-printf "\n##### Installing zookeeperd...\n"
-sudo apt install zookeeperd -y
-
-printf "\n##### Install kafka...\n"
+printf "\n##### Install kafka and zookeeper...\n"
 sudo mkdir /usr/local/kafka && cd /usr/local/kafka
 sudo wget https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
 sudo tar -xvzf kafka_2.13-3.4.0.tgz --strip 1
@@ -25,9 +22,9 @@ sudo curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/ubun
 printf "\n##### Starting service...\n"
 sudo systemctl daemon-reload
 sudo systemctl start zookeeper
-#sudo systemctl start kafka
+sudo systemctl start kafka
 sudo systemctl enable zookeeper
-#sudo systemctl enable kafka
+sudo systemctl enable kafka
 
 printf "\n##### Setting command...\n"
 
