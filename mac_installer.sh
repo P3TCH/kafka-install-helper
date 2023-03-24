@@ -8,7 +8,6 @@ if [[ $? != 0 ]] ; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
 	printf "\n##### Homebrew has installed. Updating...\n"
-    brew update
 fi
 printf "\n##### Installing openJDK\n"
 brew install openjdk
