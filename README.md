@@ -40,6 +40,10 @@ brew services start kafka
 ```shell
 brew services stop zookeeper
 brew services stop kafka
+```''
+### Check is running
+```shell
+brew services list
 ```
 ##
 
@@ -47,12 +51,17 @@ brew services stop kafka
 ### Start
 ```shell
 sudo systemctl start zookeeper
-startkafka
+sudo systemctl start kafka
 ```
 ### Stop
 ```shell
 sudo systemctl stop zookeeper
-stopkafka
+sudo systemctl stop kafka
+```
+### Check is running
+```shell
+sudo systemctl status zookeeper
+sudo systemctl stop kafka
 ```
 ##
 
@@ -81,12 +90,10 @@ cd ~\scoop\apps\kafka\3.4.0\bin\windows
 .\kafka-server-start.bat ~\scoop\apps\kafka\3.4.0\config\server.properties
 ```
 
-##
 ***FOR WINDOWS YOU CAN EDIT KAFKA SETTING IN PATH***
 ```shell
 ~\scoop\apps\kafka\3.4.0\config\server.properties
 ```
-##
   
 ### Run kafka command on windows
 Open new Powershell  
