@@ -9,6 +9,11 @@ Open terminal and run this command.
 ```shell
 curl https://raw.githubusercontent.com/P3TCH/kafka-install-helper/main/mac_installer.sh -o ~/mac_kafka_installer.sh && bash ~/mac_kafka_installer.sh
 ```
+
+❌ If error, try to uninstall and try again. Uninstall brew command ❌
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
+```
 ##
 ### <code><img height="20" src="https://www.xilinx.com/content/xilinx/en/products/design-tools/embedded-software/ubuntu/_jcr_content/root/parsysFullWidth/xilinxflexibleslab/xilinxflexibleslab-parsys/xilinxcolumns_149128/childParsys-2/xilinximage.img.png/1629757312962.png"></code> Ubuntu
 Open terminal and run this command.
