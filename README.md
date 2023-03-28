@@ -45,7 +45,7 @@ brew services start kafka
 ```shell
 brew services stop zookeeper
 brew services stop kafka
-```''
+```
 ### Check is running
 ```shell
 brew services list
